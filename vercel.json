@@ -6,11 +6,5 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.mjs" },
     { "source": "/(.*)", "destination": "/api/index.mjs" }
-  ],
-  "functions": {
-    "api/index.mjs": {
-      "memory": 512,
-      "maxDuration": 30
-    }
-  }
+  ]
 }
