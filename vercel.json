@@ -3,6 +3,11 @@
   "buildCommand": "pnpm run build:vercel",
   "outputDirectory": "dist/public",
   "installCommand": "pnpm install",
+  "functions": {
+    "api/index.mjs": {
+      "runtime": "nodejs@20.x"
+    }
+  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.mjs" },
     { "source": "/(.*)", "destination": "/api/index.mjs" }

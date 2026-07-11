@@ -7,9 +7,8 @@ dist/
 build/
 *.dist
 
-# API function build artifact (generated from api/_index.ts)
-api/index.mjs
-api/index.js
+# API function build artifact (must be committed for Vercel detection)
+# api/index.mjs - committed to repo for Vercel function detection
 
 # Environment variables
 .env
